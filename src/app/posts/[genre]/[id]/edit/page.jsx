@@ -17,11 +17,10 @@ export default async function EditPostPage({params}) {
     "use server";
 
     await db.query(`
-      INSERT INTO mus_posts
-      (artist, title, link, genre, content)
-      VALUES
-      ($1,$2,$3,$4,$5)`,
-      [formData.artist,formData.title,formData.link,formData.genre,formData.content]
+      UPDATE mus_posts
+      SET artist=$1, title=$2, link=$3, genre=$4, content=$5
+      WHERE id=$6`,
+      [formData.artist,formData.title,formData.link,formData.genre,formData.content, params.id]
     );
 
     revalidatePath("/posts");

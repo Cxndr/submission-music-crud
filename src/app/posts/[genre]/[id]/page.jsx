@@ -60,7 +60,7 @@ export default async function PostPage({params}) {
 
 
   return(
-    <div className="flex flex-col gap-12 justify-center items-center">
+    <div className="flex flex-col gap-12 justify-center items-center p-10">
       <PostFull post={post} deletePost={deletePost}/>
       <CommentForm insertComment={insertComment}/>
       <PostComments post={post} comments={comments} deleteComment={deleteComment}/>

@@ -21,17 +21,19 @@ export default function PostEdit({post, editPost, genreOptions}) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-4 items-center justify-center w-80 mx-auto my-0"
+      className="flex flex-col gap-3 items-center justify-center w-80 mx-auto my-0"
     >
-      
+
+      <label htmlFor="artist" className="relative top-2">artist</label>
       <input defaultValue={post.artist} type="text" name="artist" id="artist" placeholder="artist name..." className=""/>
-      
+
+      <label htmlFor="title" className="relative top-2">title</label>
       <input defaultValue={post.title} type="text" name="title" id="title" placeholder="track title..." className=""/>
 
+      <label htmlFor="link" className="relative top-2">soundcloud link</label>
       <input defaultValue={post.link} type="text" name="link" id="link"placeholder="soundcloud link..." className=""/>
       
-      <span>
-        <label htmlFor="genre" className="float-left p-1 pr-2">Genre: </label>
+        <label htmlFor="genre" className="relative top-2">genre: </label>
         <select
           defaultValue={post.genre}
           name="genre"
@@ -46,12 +48,12 @@ export default function PostEdit({post, editPost, genreOptions}) {
             </option>
           ))}
         </select>
-      </span>
       
+      <label htmlFor="message" className="relative top-3">message</label>
       <input defaultValue={post.content} type="text" name="content" id="content" placeholder="message... (optional)" className=""
       />
 
-      <button type="submit" className="">
+      <button type="submit" className="mt-4">
         Save
       </button>
 
