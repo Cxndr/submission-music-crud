@@ -1,0 +1,45 @@
+.genre-bg-cloud {
+  background-image: url('/_next/static/media/cloud.7392789f.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.genre-bg-dnb {
+  background-image: url('/_next/static/media/dnb.1a9d2c9b.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.genre-bg-trap {
+  background-image: url('/_next/static/media/trap.e1a27cec.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.genre-bg-house {
+  background-image: url('/_next/static/media/house.03dca5c9.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.genre-bg-phonk {
+  background-image: url('/_next/static/media/phonk.28789002.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.genre-bg-vaporwave {
+  background-image: url('/_next/static/media/vaporwave.afb826d4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.genre-bg-futurefunk {
+  background-image: url('/_next/static/media/futurefunk.53e8351c.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.genre-bg-synthwave {
+  background-image: url('/_next/static/media/synthwave.916e2639.webp');
+  background-size: cover;
+  background-position: center;
+}
+.genre-bg-lofi {
+  background-image: url('/_next/static/media/lofi.1ed70a68.jpg');
+  background-size: cover;
+  background-position: center;
+}

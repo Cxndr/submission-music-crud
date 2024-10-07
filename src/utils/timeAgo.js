@@ -1,10 +1,4 @@
-import pg from "pg";
-
-export const db = new pg.Pool({
-  connectionString: process.env.DB_CONN,
-});
-
-export function timeAgo(timestamp) {
+export default function timeAgo(timestamp) {
   const now = new Date();
   const past = new Date(timestamp);
   const secondsAgo = Math.floor((now - past) / 1000);
