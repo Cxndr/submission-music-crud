@@ -11,7 +11,7 @@ export default function TiledPosts({posts, searchParams, deletePost}) {
   return (
     <div className="flex items-start flex-wrap gap-6 p-6">
         {posts.map((post) => (
-          <PostTile post={post} deletePost={deletePost}/>
+          <PostTile key={post.id} post={post} deletePost={deletePost}/>
         ))}
       </div>
   )
