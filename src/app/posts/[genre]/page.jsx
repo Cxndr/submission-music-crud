@@ -48,7 +48,7 @@ export default async function PostsGenre({params, searchParams}) {
             <h2 className="roboto text-5xl font-bold">{`${genreName}`}</h2>
           </div>
           { posts.length > 1 &&
-            <div className="text-4xl dropshadowbig">
+            <div className="text-4xl dropshadowbig sort-icon">
               {
                   searchParams && (searchParams.sort === "asc")
                   ? <Link href={`/posts/${params.genre}/?sort=desc`}> <FaSortAmountDownAlt/> </Link>
