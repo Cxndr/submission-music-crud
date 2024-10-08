@@ -109,6 +109,14 @@ form button:hover {
   }
 }
 
+.sort-icon {
+  transition: color 0.3s, transform 0.3s;
+}
+.sort-icon:hover {
+  color: var(--lilac);
+  transform: scale(1.05);
+}
+
 .link-copied {
   opacity: 1;
   transition: opacity 2s ease-in-out;

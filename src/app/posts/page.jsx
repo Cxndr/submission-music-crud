@@ -24,7 +24,7 @@ export default async function PostFeed({searchParams}) {
       const path = `/posts/`
       revalidatePath(path);
       redirect(path);
-    }
+    } 
 
   return (
     <>
@@ -33,7 +33,7 @@ export default async function PostFeed({searchParams}) {
             <h2 className="roboto text-5xl font-bold">all music</h2>
           </div>
           { posts.length > 1 &&
-            <div className="text-4xl dropshadowbig">
+            <div className="text-4xl dropshadowbig sort-icon">
               {
                   searchParams && (searchParams.sort === "asc")
                   ? <Link href={`/posts/?sort=desc`}> <FaSortAmountDownAlt/> </Link>
